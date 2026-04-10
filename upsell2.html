@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una última oportunidad | Audiolibro Vive Fuerte</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --green-dark: #0B2B1E;
+    --green: #1B4332;
+    --green-light: #52B788;
+    --gold: #D4A843;
+    --cream: #FBF7F0;
+    --cream-dark: #F5EFE3;
+    --text: #2C2C2C;
+    --text-light: #5A5A5A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--cream);
+}
+.container { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+
+.hero {
+    background: var(--green-dark);
+    background-image: linear-gradient(165deg, #1B4332 0%, #0B2B1E 100%);
+    color: white;
+    padding: 50px 20px 60px;
+    text-align: center;
+}
+.wait-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green-dark);
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+.hero h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(34px, 5.5vw, 54px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+.hero h1 .accent { color: var(--gold); }
+.hero p {
+    font-size: 21px;
+    color: rgba(255,255,255,0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.headphones-icon {
+    font-size: 80px;
+    margin: 30px 0 10px;
+}
+
+.section { padding: 60px 0; }
+h2 {
+    font-family: 'Lora', serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+h2 .accent { color: var(--gold); font-style: italic; }
+.lead {
+    font-size: 21px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 40px;
+}
+p { margin-bottom: 18px; }
+
+.benefits {
+    list-style: none;
+    max-width: 640px;
+    margin: 30px auto;
+}
+.benefits li {
+    padding: 18px 0 18px 50px;
+    border-bottom: 1px dashed #d8cfbe;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.benefits li:last-child { border-bottom: none; }
+.benefits li::before {
+    content: "🎧";
+    position: absolute;
+    left: 0;
+    top: 16px;
+    font-size: 22px;
+}
+.benefits strong { color: var(--green); }
+
+.use-cases {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin: 40px 0;
+    border-left: 5px solid var(--gold);
+}
+.use-cases h3 {
+    font-family: 'Lora', serif;
+    color: var(--green);
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.use-case-item {
+    padding: 12px 0;
+    font-size: 17px;
+    color: var(--text);
+    line-height: 1.6;
+}
+.use-case-item strong { color: var(--green); }
+
+.cta-section {
+    background: var(--green-dark);
+    background-image: linear-gradient(165deg, #1B4332 0%, #0B2B1E 100%);
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+}
+.cta-section h2 { color: white; }
+.cta-section h2 .accent { color: var(--gold); }
+.price-card {
+    background: white;
+    color: var(--text);
+    max-width: 540px;
+    margin: 40px auto 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.price-header {
+    background: var(--green);
+    color: white;
+    padding: 25px;
+}
+.price-header h3 { color: white; font-size: 22px; margin-bottom: 5px; }
+.price-header p { color: rgba(255,255,255,0.85); margin: 0; font-size: 15px; }
+.price-body { padding: 35px 30px; }
+.price-old {
+    font-size: 20px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+.price-now {
+    font-family: 'Lora', serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1;
+}
+.price-now sup { font-size: 24px; vertical-align: super; margin-right: 5px; }
+.price-currency { font-size: 15px; color: var(--text-light); margin-bottom: 25px; }
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin: 25px 0;
+    padding: 22px 0;
+    border-top: 1px solid #e8e0d5;
+    border-bottom: 1px solid #e8e0d5;
+}
+.price-features li {
+    padding: 8px 0;
+    padding-left: 28px;
+    position: relative;
+    font-size: 16px;
+}
+.price-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: var(--green-light);
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn-yes {
+    display: block;
+    background: var(--gold);
+    color: var(--green-dark);
+    text-decoration: none;
+    padding: 22px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 0 12px;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 #b08c2e;
+}
+.btn-yes:hover { background: #e0b449; transform: translateY(-2px); box-shadow: 0 6px 0 #b08c2e; }
+.btn-no {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 20px auto 0;
+    background: none;
+    border: none;
+}
+footer {
+    background: var(--green-dark);
+    color: rgba(255,255,255,0.6);
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <div class="wait-badge">🎧 Una última oportunidad</div>
+        <div class="headphones-icon">🎧</div>
+        <h1>
+            ¿Y si pudieras <span class="accent">escuchar el libro</span><br>
+            mientras haces otras cosas?
+        </h1>
+        <p>El libro completo, narrado profesionalmente, listo para escuchar.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Para muchas personas, <span class="accent">escuchar es más fácil</span> que leer</h2>
+
+        <p class="lead">Si tienes dificultades para leer durante mucho tiempo, si te cansas la vista, si prefieres aprovechar tus caminatas o tareas de la casa para aprender — el audiolibro es para ti.</p>
+
+        <ul class="benefits">
+            <li><strong>Escucha mientras caminas.</strong> Convierte tus 30 minutos de caminata diaria en una sesión de aprendizaje.</li>
+            <li><strong>Escucha mientras cocinas.</strong> Aprovecha el tiempo en la cocina para repasar las ideas más importantes.</li>
+            <li><strong>Escucha en el coche.</strong> En lugar de la radio, escucha contenido que de verdad cambia tu vida.</li>
+            <li><strong>Escucha antes de dormir.</strong> Una forma relajante de cerrar el día con conocimiento útil.</li>
+            <li><strong>Sin esfuerzo visual.</strong> Si tienes problemas de visión o te cansa la vista, el audio es ideal.</li>
+            <li><strong>Repite cuantas veces quieras.</strong> A diferencia de la lectura, escuchar varias veces es natural y sin esfuerzo.</li>
+        </ul>
+
+        <div class="use-cases">
+            <h3>¿Cómo lo recibo?</h3>
+            <p>Después del pago, recibes acceso inmediato a los archivos de audio del libro completo, en formato MP3, listos para descargar a tu computadora, celular o tablet. Cada capítulo es un archivo separado para que puedas escuchar a tu ritmo.</p>
+            <p style="margin-bottom: 0;">Funciona en cualquier dispositivo: iPhone, Android, Windows, Mac, o reproductores MP3 tradicionales.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Añade el audiolibro <span class="accent">a tu pedido</span></h2>
+
+        <p style="color: rgba(255,255,255,0.85); font-size: 19px; max-width: 600px; margin: 0 auto;">
+            Misma calidad. Misma información. Solo que ahora puedes escucharlo en cualquier momento, en cualquier lugar.
+        </p>
+
+        <div class="price-card">
+            <div class="price-header">
+                <h3>🎧 Audiolibro Vive Fuerte</h3>
+                <p>Libro completo narrado profesionalmente</p>
+            </div>
+            <div class="price-body">
+                <div class="price-old">Precio normal: $67.00</div>
+                <div class="price-now"><sup>$</sup>37<sup>.00</sup></div>
+                <div class="price-currency">USD · Oferta única en esta página</div>
+
+                <ul class="price-features">
+                    <li><strong>Libro completo</strong> en formato audio</li>
+                    <li>Narración clara y a buen ritmo para 60+</li>
+                    <li>Cada capítulo en archivo separado</li>
+                    <li>Formato MP3 universal</li>
+                    <li>Funciona en cualquier dispositivo</li>
+                    <li>Descarga ilimitada</li>
+                    <li><strong>Acceso inmediato</strong> después del pago</li>
+                </ul>
+
+                <a href="https://hotmart.com/TU-LINK-UPSELL2-AQUI" class="btn-yes">
+                    Sí, añadir el audiolibro
+                </a>
+
+                <a href="https://hotmart.com/TU-LINK-DECLINE-AQUI" class="btn-no">
+                    No, gracias. Continuar sin audiolibro.
+                </a>
+            </div>
+        </div>
+
+        <p style="color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 20px;">
+            🔒 Pago seguro · 📥 Acceso inmediato · ⭐ Garantía de 7 días
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p style="font-family: 'Lora', serif; font-size: 16px; color: var(--gold); margin-bottom: 15px;">Vive Fuerte Después de los 60</p>
+        <p>© 2026 · Todos los derechos reservados</p>
+    </div>
+</footer>
+
+</body>
+</html>

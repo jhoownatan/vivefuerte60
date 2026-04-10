@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una alternativa más simple | Vive Fuerte</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --green-dark: #0B2B1E;
+    --green: #1B4332;
+    --green-light: #52B788;
+    --gold: #D4A843;
+    --cream: #FBF7F0;
+    --cream-dark: #F5EFE3;
+    --text: #2C2C2C;
+    --text-light: #5A5A5A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--cream);
+}
+.container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+.hero {
+    background: var(--green-dark);
+    background-image: linear-gradient(165deg, #1B4332 0%, #0B2B1E 100%);
+    color: white;
+    padding: 50px 20px 60px;
+    text-align: center;
+}
+.wait-badge {
+    display: inline-block;
+    border: 1.5px solid var(--gold);
+    color: var(--gold);
+    padding: 8px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    border-radius: 50px;
+}
+.hero h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(32px, 5vw, 50px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+.hero h1 .accent { color: var(--gold); }
+.hero p {
+    font-size: 21px;
+    color: rgba(255,255,255,0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.section { padding: 60px 0; }
+h2 {
+    font-family: 'Lora', serif;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 700;
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+h2 .accent { color: var(--gold); font-style: italic; }
+
+.honest-message {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin: 30px 0;
+    border-left: 5px solid var(--gold);
+    font-size: 18px;
+    line-height: 1.7;
+}
+.honest-message p { margin-bottom: 15px; }
+.honest-message strong { color: var(--green); }
+.honest-message p:last-child { margin-bottom: 0; }
+
+.compare-box {
+    background: var(--cream-dark);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+.compare-box h3 {
+    font-family: 'Lora', serif;
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.compare-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d8cfbe;
+    font-size: 16px;
+}
+.compare-table td:first-child { font-weight: 600; color: var(--green); }
+.compare-table td:last-child { text-align: center; color: var(--green-light); font-size: 22px; }
+
+.cta-section {
+    background: var(--green-dark);
+    background-image: linear-gradient(165deg, #1B4332 0%, #0B2B1E 100%);
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+}
+.cta-section h2 { color: white; }
+.cta-section h2 .accent { color: var(--gold); }
+.price-card {
+    background: white;
+    color: var(--text);
+    max-width: 540px;
+    margin: 40px auto 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.price-header {
+    background: var(--green);
+    color: white;
+    padding: 25px;
+}
+.price-header h3 { color: white; font-size: 22px; margin-bottom: 5px; }
+.price-header p { color: rgba(255,255,255,0.85); margin: 0; font-size: 15px; }
+.price-body { padding: 35px 30px; }
+.price-now {
+    font-family: 'Lora', serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1;
+}
+.price-now sup { font-size: 24px; vertical-align: super; margin-right: 5px; }
+.price-currency { font-size: 15px; color: var(--text-light); margin-bottom: 25px; }
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin: 25px 0;
+    padding: 22px 0;
+    border-top: 1px solid #e8e0d5;
+    border-bottom: 1px solid #e8e0d5;
+}
+.price-features li {
+    padding: 8px 0;
+    padding-left: 28px;
+    position: relative;
+    font-size: 16px;
+}
+.price-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: var(--green-light);
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn-yes {
+    display: block;
+    background: var(--gold);
+    color: var(--green-dark);
+    text-decoration: none;
+    padding: 22px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 0 12px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 #b08c2e;
+}
+.btn-yes:hover { background: #e0b449; }
+.btn-no {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 20px auto 0;
+}
+footer {
+    background: var(--green-dark);
+    color: rgba(255,255,255,0.6);
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <div class="wait-badge">Lo entiendo — pero antes de irte</div>
+        <h1>
+            Tengo una versión <span class="accent">más simple</span><br>
+            del plan
+        </h1>
+        <p>Si los $19.97 del plan completo te parecen demasiado, hay una opción más accesible.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="honest-message">
+            <p>Voy a ser directo contigo.</p>
+
+            <p>Sé que dijiste que no al Plan de 30 Días completo. Y lo respeto. Tal vez no era el momento, tal vez es demasiado, tal vez prefieres ir paso a paso.</p>
+
+            <p>Pero antes de que cierres esta página, quiero ofrecerte algo más simple: <strong>un resumen condensado del plan en formato más corto</strong>. Solo lo esencial — los 7 cambios más importantes para empezar, uno por semana, durante las próximas 7 semanas.</p>
+
+            <p>No tienes 30 días de contenido. Tienes <strong>7 semanas con una sola acción cada una</strong>. Más simple, más fácil, y por la mitad del precio.</p>
+
+            <p>Es para ti si quieres empezar a aplicar el libro pero prefieres ir despacio, sin sentirte abrumado.</p>
+        </div>
+
+        <div class="compare-box">
+            <h3>Lo que incluye esta versión</h3>
+            <table class="compare-table">
+                <tr><td>7 semanas guiadas</td><td>✓</td></tr>
+                <tr><td>1 acción nueva por semana</td><td>✓</td></tr>
+                <tr><td>Ilustraciones editoriales</td><td>✓</td></tr>
+                <tr><td>Casillas para marcar progreso</td><td>✓</td></tr>
+                <tr><td>Mismo formato grande para 60+</td><td>✓</td></tr>
+                <tr><td>Acceso inmediato</td><td>✓</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>La versión <span class="accent">esencial</span> del plan</h2>
+
+        <div class="price-card">
+            <div class="price-header">
+                <h3>📅 Plan Esencial Vive Fuerte</h3>
+                <p>7 semanas, 7 cambios, paso a paso</p>
+            </div>
+            <div class="price-body">
+                <div class="price-now"><sup>$</sup>9<sup>.97</sup></div>
+                <div class="price-currency">USD · Pago único · Acceso inmediato</div>
+
+                <ul class="price-features">
+                    <li><strong>7 semanas</strong> guiadas</li>
+                    <li>Una acción esencial por semana</li>
+                    <li>Más simple que el plan completo</li>
+                    <li>Ideal si quieres empezar despacio</li>
+                    <li>Mismo formato premium</li>
+                    <li>Acceso inmediato</li>
+                </ul>
+
+                <a href="https://hotmart.com/TU-LINK-DOWNSELL-AQUI" class="btn-yes">
+                    Sí, quiero la versión esencial
+                </a>
+
+                <a href="https://hotmart.com/TU-LINK-DECLINE-AQUI" class="btn-no">
+                    No, gracias. Continuar al siguiente paso.
+                </a>
+            </div>
+        </div>
+
+        <p style="color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 20px;">
+            🔒 Pago seguro · 📥 Acceso inmediato · ⭐ Garantía de 7 días
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p style="font-family: 'Lora', serif; font-size: 16px; color: var(--gold); margin-bottom: 15px;">Vive Fuerte Después de los 60</p>
+        <p>© 2026 · Todos los derechos reservados</p>
+    </div>
+</footer>
+
+</body>
+</html>

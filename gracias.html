@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¡Gracias! Tu compra está lista | Vive Fuerte</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --green-dark: #0B2B1E;
+    --green: #1B4332;
+    --green-light: #52B788;
+    --gold: #D4A843;
+    --cream: #FBF7F0;
+    --cream-dark: #F5EFE3;
+    --text: #2C2C2C;
+    --text-light: #5A5A5A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--cream);
+}
+.container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+.hero {
+    background: var(--green-dark);
+    background-image:
+        radial-gradient(ellipse at 30% 20%, rgba(82,183,136,0.20) 0%, transparent 55%),
+        linear-gradient(165deg, #1B4332 0%, #0B2B1E 100%);
+    color: white;
+    padding: 80px 20px 70px;
+    text-align: center;
+}
+.celebration-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+.hero h1 .accent { color: var(--gold); }
+.hero p {
+    font-size: 21px;
+    color: rgba(255,255,255,0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.section { padding: 60px 0; }
+h2 {
+    font-family: 'Lora', serif;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 700;
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+h2 .accent { color: var(--gold); }
+
+.steps-box {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 30px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.step-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e0d5;
+    align-items: flex-start;
+}
+.step-item:last-child { border-bottom: none; }
+.step-num {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: var(--gold);
+    color: var(--green-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+.step-content h3 {
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    color: var(--green);
+    margin-bottom: 5px;
+}
+.step-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.email-warning {
+    background: #FFFBEB;
+    border: 2px solid var(--gold);
+    padding: 25px 30px;
+    border-radius: 8px;
+    margin: 30px 0;
+    text-align: center;
+}
+.email-warning strong { color: var(--green); }
+.email-warning p { font-size: 16px; line-height: 1.6; margin: 0; }
+
+.first-step-section {
+    background: var(--green);
+    color: white;
+    padding: 60px 30px;
+    border-radius: 12px;
+    margin: 40px 0;
+    text-align: center;
+}
+.first-step-section h2 {
+    color: white;
+    font-size: 32px;
+}
+.first-step-section h2 .accent {
+    color: var(--gold);
+}
+.first-step-quote {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+    margin: 20px auto 25px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+.first-step-action {
+    font-size: 19px;
+    line-height: 1.7;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.first-step-action strong {
+    color: var(--gold);
+}
+
+.support-box {
+    background: var(--cream-dark);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px 0;
+}
+.support-box h3 {
+    font-family: 'Lora', serif;
+    color: var(--green);
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+.support-box p {
+    color: var(--text);
+    font-size: 16px;
+    margin: 0;
+}
+.support-box a {
+    color: var(--green);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+footer {
+    background: var(--green-dark);
+    color: rgba(255,255,255,0.6);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+footer p {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signature {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: var(--gold);
+    font-style: italic;
+    margin-top: 25px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <div class="celebration-icon">🎉</div>
+        <h1>
+            ¡Felicidades!<br>
+            Tu compra <span class="accent">está lista</span>
+        </h1>
+        <p>Acabas de dar el primer paso hacia tu nueva versión.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>¿Qué pasa <span class="accent">ahora?</span></h2>
+
+        <div class="steps-box">
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <h3>Revisa tu correo electrónico</h3>
+                    <p>En los próximos minutos vas a recibir un correo con los enlaces de descarga de todos tus archivos. Si no lo ves en tu bandeja de entrada, revisa la carpeta de "spam" o "promociones".</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <h3>Descarga tus archivos</h3>
+                    <p>Guarda los archivos PDF en tu computadora, tablet o celular. Puedes leerlos en cualquier dispositivo. Si quieres, también puedes imprimirlos para leer en papel.</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <h3>Lee la introducción esta semana</h3>
+                    <p>No tienes que leer todo el libro de golpe. Empieza por la introducción. Después, un capítulo por día — siete días, siete capítulos. Es la mejor forma de absorber todo.</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                    <h3>Toma tu primer paso</h3>
+                    <p>Cada capítulo termina con una acción concreta para empezar esa misma semana. Pequeña, simple, imposible de no hacer. Hazla. Ese es el secreto de las personas que sí transforman su salud.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="email-warning">
+            <p><strong>⚠️ Importante:</strong> Si en 15 minutos no recibiste el correo, revisa primero tu carpeta de <strong>spam o promociones</strong>. La mayoría de las veces aparece ahí. Si tampoco está, escríbenos al correo de soporte y resolveremos en menos de 24 horas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="container">
+        <div class="first-step-section">
+            <h2>Tu <span class="accent">primer paso</span> empieza hoy</h2>
+
+            <p class="first-step-quote">
+                "Mañana siempre suena fácil. Pero mañana nunca llega si no empezamos hoy."
+            </p>
+
+            <p class="first-step-action">
+                Antes de cerrar esta página, haz <strong>una sola cosa</strong>: bebe un vaso grande de agua. Ahora mismo. No te tomará más de un minuto.<br><br>
+                Ese es tu primer paso. El más simple. El más fácil. Y el inicio de todo lo que viene.
+            </p>
+        </div>
+
+        <div class="support-box">
+            <h3>¿Necesitas ayuda?</h3>
+            <p>Si tienes cualquier problema con tu descarga o tu compra, escríbenos a <a href="mailto:soporte@vivefuerte60.com">soporte@vivefuerte60.com</a> y te respondemos en menos de 24 horas.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p style="font-family: 'Lora', serif; font-size: 18px; color: var(--gold); margin-bottom: 15px;">
+            Vive Fuerte Después de los 60
+        </p>
+        <p>© 2026 · Todos los derechos reservados</p>
+        <p style="font-size: 11px; margin-top: 20px; line-height: 1.6;">
+            Aviso médico: Este material tiene un propósito educativo y no sustituye el consejo médico profesional. Consulta siempre a tu médico antes de hacer cambios en tu alimentación, suplementación, medicamentos o rutina de ejercicios.
+        </p>
+        <div class="signature">— Tu nueva versión empieza ahora —</div>
+    </div>
+</footer>
+
+</body>
+</html>

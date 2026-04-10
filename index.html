@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vive Fuerte Después de los 60 — La Guía Honesta</title>
+<meta name="description" content="La guía honesta para recuperar tu cuerpo, tu mente y tu independencia después de los 60. Basada en ciencia real, no en milagros.">
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green-dark: #0B2B1E;
+    --green: #1B4332;
+    --green-mid: #2D6A4F;
+    --green-light: #52B788;
+    --gold: #D4A843;
+    --gold-light: #F5E1A4;
+    --cream: #FBF7F0;
+    --cream-dark: #F5EFE3;
+    --text: #2C2C2C;
+    --text-light: #5A5A5A;
+    --warm-yellow: #FFFBEB;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--cream);
+}
+
+.serif { font-family: 'Lora', Georgia, serif; }
+
+/* ============ HEADER / HERO ============ */
+.hero {
+    background: var(--green-dark);
+    background-image:
+        radial-gradient(ellipse at 25% 15%, rgba(82,183,136,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 85%, rgba(212,168,67,0.12) 0%, transparent 55%),
+        linear-gradient(165deg, #1B4332 0%, #0B2B1E 60%, #0A1F15 100%);
+    color: white;
+    padding: 60px 20px 80px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-badge {
+    display: inline-block;
+    border: 1.5px solid var(--gold);
+    color: var(--gold);
+    padding: 8px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+.hero h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(42px, 7vw, 78px);
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+}
+
+.hero h1 .age {
+    display: block;
+    color: var(--gold);
+    font-size: 0.7em;
+    margin-top: 10px;
+}
+
+.hero-subtitle {
+    font-family: 'Lora', serif;
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 700px;
+    margin: 35px auto;
+    line-height: 1.5;
+}
+
+.hero-divider {
+    width: 80px;
+    height: 2px;
+    background: rgba(212, 168, 67, 0.5);
+    margin: 30px auto;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.hero-stat {
+    text-align: center;
+}
+
+.hero-stat-num {
+    font-family: 'Lora', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--green-light);
+    line-height: 1;
+}
+
+.hero-stat-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+/* ============ CONTAINERS ============ */
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-dark {
+    background: var(--cream-dark);
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: -0.01em;
+}
+
+h2 .accent {
+    color: var(--gold);
+    font-style: italic;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+p {
+    margin-bottom: 18px;
+    color: var(--text);
+}
+
+.lead {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--text);
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 40px;
+}
+
+.lead em {
+    color: var(--green);
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ============ STORY SECTION ============ */
+.story p {
+    font-size: 20px;
+    line-height: 1.75;
+    margin-bottom: 24px;
+    color: var(--text);
+}
+
+.story p strong {
+    color: var(--green);
+}
+
+.story-highlight {
+    background: var(--warm-yellow);
+    border-left: 5px solid var(--gold);
+    padding: 25px 30px;
+    margin: 35px 0;
+    border-radius: 6px;
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--green);
+    line-height: 1.5;
+}
+
+/* ============ CHAPTERS LIST ============ */
+.chapters {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.chapter-card {
+    background: white;
+    border: 1px solid #e8e0d5;
+    border-left: 5px solid var(--gold);
+    padding: 28px 32px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    transition: all 0.2s;
+}
+
+.chapter-card:hover {
+    border-left-color: var(--green-light);
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.chapter-num {
+    font-family: 'Lora', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    flex-shrink: 0;
+    min-width: 50px;
+}
+
+.chapter-content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: var(--green);
+}
+
+.chapter-content p {
+    font-size: 17px;
+    color: var(--text-light);
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* ============ WHO IS IT FOR ============ */
+.checklist {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px dashed #d8cfbe;
+    font-size: 19px;
+}
+
+.check-item:last-child {
+    border-bottom: none;
+}
+
+.check-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: var(--green-light);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+/* ============ DIFFERENCE SECTION ============ */
+.difference {
+    background: white;
+    border: 2px solid var(--green);
+    border-radius: 12px;
+    padding: 40px;
+    margin: 30px 0;
+}
+
+.difference h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--green);
+}
+
+.compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.compare-col h4 {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid;
+}
+
+.compare-bad h4 {
+    color: #C1292E;
+    border-color: #C1292E;
+}
+
+.compare-good h4 {
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.compare-col ul {
+    list-style: none;
+}
+
+.compare-col li {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-light);
+    padding-left: 24px;
+    position: relative;
+}
+
+.compare-bad li::before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: #C1292E;
+    font-weight: 700;
+}
+
+.compare-good li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--green-light);
+    font-weight: 700;
+}
+
+@media (max-width: 640px) {
+    .compare { grid-template-columns: 1fr; }
+}
+
+/* ============ AUTHOR/PROMISE SECTION ============ */
+.promise-box {
+    background: var(--green);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.promise-box h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.promise-box p {
+    color: rgba(255,255,255,0.9);
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.promise-box .signature {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gold);
+    margin-top: 30px;
+}
+
+/* ============ PRICING / CTA ============ */
+.cta-section {
+    background: var(--green-dark);
+    background-image:
+        radial-gradient(ellipse at 30% 20%, rgba(82,183,136,0.15) 0%, transparent 55%),
+        linear-gradient(165deg, #1B4332 0%, #0B2B1E 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+}
+
+.cta-section h2 .accent {
+    color: var(--gold);
+}
+
+.price-card {
+    background: white;
+    color: var(--text);
+    max-width: 540px;
+    margin: 50px auto 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.price-header {
+    background: var(--green);
+    color: white;
+    padding: 30px;
+}
+
+.price-header h3 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.price-header p {
+    color: rgba(255,255,255,0.85);
+    margin: 0;
+    font-size: 16px;
+}
+
+.price-body {
+    padding: 40px 30px;
+}
+
+.price-old {
+    font-size: 22px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.price-now {
+    font-family: 'Lora', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.price-now sup {
+    font-size: 28px;
+    vertical-align: super;
+    margin-right: 5px;
+}
+
+.price-currency {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin: 30px 0;
+    padding: 25px 0;
+    border-top: 1px solid #e8e0d5;
+    border-bottom: 1px solid #e8e0d5;
+}
+
+.price-features li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 17px;
+    color: var(--text);
+}
+
+.price-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: var(--green-light);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-buy {
+    display: block;
+    background: var(--gold);
+    color: var(--green-dark);
+    text-decoration: none;
+    padding: 22px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 0 15px;
+    transition: all 0.2s;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border: 3px solid var(--gold);
+    box-shadow: 0 4px 0 #b08c2e;
+}
+
+.btn-buy:hover {
+    background: #e0b449;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #b08c2e;
+}
+
+.btn-buy:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b08c2e;
+}
+
+.security-note {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-top: 15px;
+}
+
+.security-note span {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+/* ============ GUARANTEE ============ */
+.guarantee {
+    background: white;
+    max-width: 720px;
+    margin: 60px auto 0;
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    border: 3px solid var(--gold);
+    color: var(--text);
+}
+
+.guarantee-seal {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.guarantee h3 {
+    font-size: 32px;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.guarantee p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text);
+    max-width: 580px;
+    margin: 0 auto 15px;
+}
+
+/* ============ FAQ ============ */
+.faq-item {
+    background: white;
+    border: 1px solid #e8e0d5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    padding: 22px 28px;
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--green);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 50px;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: var(--gold);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-content {
+    padding: 0 28px 25px;
+    color: var(--text-light);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* ============ FOOTER ============ */
+footer {
+    background: var(--green-dark);
+    color: rgba(255,255,255,0.6);
+    padding: 50px 20px 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .disclaimer {
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* ============ MOBILE ============ */
+@media (max-width: 640px) {
+    body { font-size: 17px; }
+    .section { padding: 60px 0; }
+    .hero { padding: 50px 18px 60px; }
+    .hero-stats { gap: 30px; }
+    .hero-stat-num { font-size: 34px; }
+    .chapter-card { padding: 22px 20px; gap: 16px; }
+    .chapter-num { font-size: 32px; min-width: 40px; }
+    .chapter-content h3 { font-size: 19px; }
+    .price-now { font-size: 52px; }
+    .price-body { padding: 30px 24px; }
+    .btn-buy { font-size: 19px; padding: 20px 24px; }
+    .guarantee { padding: 35px 25px; }
+    .difference { padding: 25px; }
+    .promise-box { padding: 35px 25px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge">📖 Guía Basada en Ciencia Real</div>
+
+        <h1>
+            Vive Fuerte
+            <span class="age">Después de los 60</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            La guía honesta para recuperar tu cuerpo, tu mente y tu independencia<br>
+            — basada en ciencia real, no en milagros.
+        </p>
+
+        <div class="hero-divider"></div>
+
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">7</div>
+                <div class="hero-stat-label">Capítulos</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">7</div>
+                <div class="hero-stat-label">Días de Plan</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">50+</div>
+                <div class="hero-stat-label">Estudios Citados</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ STORY / PROBLEM ============ -->
+<section class="section">
+    <div class="container">
+        <h2>Lo que <span class="accent">nadie te dijo</span> sobre cumplir 60</h2>
+
+        <div class="story">
+            <p>Si has cumplido 60 años, probablemente has sentido cosas que antes no sentías.</p>
+
+            <p>Las piernas que ya no son las mismas. El cansancio que llega sin razón. El hormigueo en los pies que aparece de la nada. Las manos que se vuelven torpes. Las noches en que el sueño te abandona a las tres de la mañana. La comida que ya no se digiere como antes.</p>
+
+            <p>Y probablemente, como casi todo el mundo, has explicado todo esto con la misma frase: <strong>"Es normal por la edad."</strong></p>
+
+            <div class="story-highlight">
+                "Pero la verdad es que la mayoría de estas cosas <strong>no son normales</strong>. Tienen causas específicas. Y tienen solución."
+            </div>
+
+            <p>Lo que nadie te ha contado — porque las consultas médicas son cortas, porque la información está escondida en estudios científicos que casi nadie lee, porque hay demasiado ruido en internet — es que tu cuerpo te está enviando mensajes muy específicos. Y cada uno de esos mensajes tiene una respuesta concreta, basada en ciencia real.</p>
+
+            <p>Este libro existe para darte esas respuestas. Sin promesas mágicas. Sin charlatanería. Sin "el secreto que tu médico no quiere que sepas." Solo verdad — la que la ciencia ha demostrado, explicada en un lenguaje que cualquier persona puede entender.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CHAPTERS ============ -->
+<section class="section section-dark">
+    <div class="container">
+        <h2>Lo que vas a descubrir en <span class="accent">7 capítulos</span></h2>
+
+        <p class="lead">Cada capítulo es un tema específico de tu salud. Cada uno tiene <em>3 acciones concretas</em> que puedes empezar esta misma semana.</p>
+
+        <div class="chapters">
+
+            <div class="chapter-card">
+                <div class="chapter-num">1</div>
+                <div class="chapter-content">
+                    <h3>Recupera la Sensibilidad en tus Pies y Manos</h3>
+                    <p>Por qué aparecen los hormigueos, qué los causa realmente, y los tres pasos exactos para volver a sentir tu cuerpo como antes.</p>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-num">2</div>
+                <div class="chapter-content">
+                    <h3>Vuelve a Sentirte Fuerte: La Verdad Sobre tus Músculos</h3>
+                    <p>El error que comete casi todo el mundo al cuidar sus músculos después de los 60 — y cómo recuperar fuerza sin ir al gimnasio.</p>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-num">3</div>
+                <div class="chapter-content">
+                    <h3>Huesos Firmes para Caminar Sin Miedo</h3>
+                    <p>El gran mito sobre el calcio que probablemente te han contado toda la vida, y los 3 pilares reales para huesos resistentes a cualquier edad.</p>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-num">4</div>
+                <div class="chapter-content">
+                    <h3>Adiós al Mareo: Recupera tu Equilibrio</h3>
+                    <p>El tipo de mareo más común en adultos mayores tiene un tratamiento que en muchos casos lo elimina en una sola sesión. Aquí te lo explico todo.</p>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-num">5</div>
+                <div class="chapter-content">
+                    <h3>Vuelve a Dormir Como Cuando Tenías 40</h3>
+                    <p>Por qué dormir mal después de los 60 no es normal, qué le pasa a tu cuerpo cuando duermes mal, y la rutina nocturna que todo cambia.</p>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-num">6</div>
+                <div class="chapter-content">
+                    <h3>Una Digestión Tranquila a Cualquier Edad</h3>
+                    <p>El gran malentendido sobre la "acidez" que afecta a millones de personas — y por qué los medicamentos comunes pueden empeorar el problema a largo plazo.</p>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-num">7</div>
+                <div class="chapter-content">
+                    <h3>El Azúcar Oculto: Lo Que Está Saboteando Todo</h3>
+                    <p>El veneno final, escondido en alimentos que parecen sanos. Aprende a identificarlo en 30 segundos en cualquier supermercado.</p>
+                </div>
+            </div>
+
+            <div class="chapter-card" style="border-left-color: var(--green-light); background: linear-gradient(to right, #f0f7f4, white);">
+                <div class="chapter-num" style="color: var(--green-light);">★</div>
+                <div class="chapter-content">
+                    <h3>Capítulo Final: Tu Plan de 7 Días para Empezar Hoy</h3>
+                    <p>Una sola acción nueva cada día, durante una semana. Al final de los 7 días, vas a haber implementado todos los cambios más importantes — sin sentirte abrumado.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ DIFFERENCE ============ -->
+<section class="section">
+    <div class="container">
+        <h2>Por qué este libro es <span class="accent">diferente</span></h2>
+
+        <div class="difference">
+            <h3>Yo hice el trabajo por ti</h3>
+
+            <p style="text-align: center; font-size: 19px; color: var(--text-light); margin-bottom: 30px;">
+                Internet está lleno de información de salud. La mayoría es exagerada, falsa, o vendida con motivos comerciales.<br>Cuando se trata de tu salud después de los 60, mereces algo mejor.
+            </p>
+
+            <div class="compare">
+                <div class="compare-col compare-bad">
+                    <h4>Lo que NO es este libro</h4>
+                    <ul>
+                        <li>Promesas milagrosas</li>
+                        <li>"El secreto que tu médico no quiere que sepas"</li>
+                        <li>Información copiada de blogs de internet</li>
+                        <li>Consejos genéricos sin respaldo</li>
+                        <li>Páginas y páginas de relleno</li>
+                        <li>Lenguaje médico confuso</li>
+                    </ul>
+                </div>
+
+                <div class="compare-col compare-good">
+                    <h4>Lo que SÍ vas a recibir</h4>
+                    <ul>
+                        <li>Respaldo de más de 50 estudios reales</li>
+                        <li>3 acciones concretas por capítulo</li>
+                        <li>Recetas simples y prácticas</li>
+                        <li>Plan de 7 días para empezar</li>
+                        <li>Lenguaje claro y conversacional</li>
+                        <li>Avisos médicos en cada paso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ WHO IS IT FOR ============ -->
+<section class="section section-dark">
+    <div class="container">
+        <h2>Este libro es para ti si...</h2>
+
+        <div class="checklist">
+            <div class="check-item">
+                <div class="check-icon">✓</div>
+                <div>Tienes más de 55 años y quieres cuidar tu salud con información honesta</div>
+            </div>
+            <div class="check-item">
+                <div class="check-icon">✓</div>
+                <div>Sientes que algo en tu cuerpo cambió pero te dicen que "es la edad"</div>
+            </div>
+            <div class="check-item">
+                <div class="check-icon">✓</div>
+                <div>Estás cansado de dietas complicadas y promesas exageradas</div>
+            </div>
+            <div class="check-item">
+                <div class="check-icon">✓</div>
+                <div>Quieres saber qué preguntas hacer en tu próxima consulta médica</div>
+            </div>
+            <div class="check-item">
+                <div class="check-icon">✓</div>
+                <div>Buscas información basada en ciencia, explicada de forma sencilla</div>
+            </div>
+            <div class="check-item">
+                <div class="check-icon">✓</div>
+                <div>Quieres mantener tu independencia y vitalidad en los próximos años</div>
+            </div>
+            <div class="check-item">
+                <div class="check-icon">✓</div>
+                <div>Tienes un familiar mayor a quien quieres ayudar con buena información</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ AUTHOR PROMISE ============ -->
+<section class="section">
+    <div class="container">
+        <h2>Mi promesa <span class="accent">contigo</span></h2>
+
+        <div class="promise-box">
+            <h3>Honestidad por encima de todo</h3>
+
+            <p>Este libro fue escrito con respeto por tu inteligencia. No te trato como alguien que necesita ser "rescatado." Te trato como un adulto capaz de entender la verdad y tomar decisiones informadas sobre tu propio cuerpo.</p>
+
+            <p>Cada afirmación está respaldada por estudios reales. Cada recomendación viene de fuentes confiables. Cada consejo prioriza tu seguridad y tu bienestar.</p>
+
+            <p>Si en algún momento la ciencia es limitada, te lo digo. Si una recomendación tiene evidencia fuerte, te lo digo. Si algo es solo "prometedor pero no comprobado," también te lo digo. Mereces saber la diferencia.</p>
+
+            <div class="signature">— Tu nueva versión empieza aquí</div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CTA / PRICING ============ -->
+<section class="cta-section" id="comprar">
+    <div class="container">
+        <h2>Empieza tu transformación <span class="accent">hoy mismo</span></h2>
+
+        <p style="color: rgba(255,255,255,0.85); font-size: 20px; max-width: 600px; margin: 0 auto;">
+            Acceso inmediato. Descarga digital. Sin envíos. Sin esperas.
+        </p>
+
+        <div class="price-card">
+            <div class="price-header">
+                <h3>📖 Vive Fuerte Después de los 60</h3>
+                <p>Guía completa en formato PDF</p>
+            </div>
+
+            <div class="price-body">
+                <div class="price-old">Precio normal: $29.97</div>
+                <div class="price-now"><sup>$</sup>9<sup>.97</sup></div>
+                <div class="price-currency">USD · Pago único · Acceso de por vida</div>
+
+                <ul class="price-features">
+                    <li><strong>7 capítulos completos</strong> + Plan de 7 días</li>
+                    <li>Más de <strong>80 páginas</strong> de contenido práctico</li>
+                    <li>Basado en <strong>50+ estudios científicos</strong></li>
+                    <li><strong>Recetas simples</strong> en cada capítulo</li>
+                    <li>Lenguaje claro, <strong>fuente grande</strong> para fácil lectura</li>
+                    <li><strong>Descarga inmediata</strong> después del pago</li>
+                    <li>Acceso desde computadora, tablet o celular</li>
+                </ul>
+
+                <a href="https://hotmart.com/TU-LINK-AQUI" class="btn-buy">
+                    Sí, quiero mi guía ahora
+                </a>
+
+                <p class="security-note">
+                    <span>🔒 Pago 100% seguro</span><span>·</span><span>📥 Acceso inmediato</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- ============ GUARANTEE ============ -->
+        <div class="guarantee">
+            <div class="guarantee-seal">⭐ Garantía de 7 días ⭐</div>
+            <h3>Riesgo cero para ti</h3>
+            <p>
+                Tienes <strong>7 días completos</strong> para leer el libro y aplicar lo que aprendas. Si por cualquier razón sientes que no es para ti, escríbenos y te devolvemos el 100% de tu dinero. Sin preguntas. Sin trámites complicados.
+            </p>
+            <p style="font-style: italic; color: var(--text-light);">
+                Confiamos tanto en el valor de este libro que asumimos todo el riesgo por ti.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+    <div class="container">
+        <h2>Preguntas <span class="accent">frecuentes</span></h2>
+
+        <details class="faq-item">
+            <summary>¿Cómo recibo el libro?</summary>
+            <div class="faq-content">
+                Inmediatamente después de tu pago, vas a recibir un correo electrónico con el enlace de descarga del PDF. Puedes leerlo en tu computadora, tablet o celular. También puedes imprimirlo si prefieres leerlo en papel.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Es complicado de leer? Tengo más de 70 años.</summary>
+            <div class="faq-content">
+                Para nada. El libro está escrito específicamente para personas mayores de 60 años. La fuente es grande, los párrafos son cortos, y el lenguaje es sencillo — como una conversación honesta. Si sabes leer un periódico, puedes leer este libro sin problema.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Es como otros libros de salud que he comprado antes?</summary>
+            <div class="faq-content">
+                No. La mayoría de los libros de salud son: o demasiado técnicos (escritos para médicos), o demasiado vagos (sin consejos concretos), o demasiado exagerados (con promesas mágicas). Este libro es distinto: está basado en ciencia real, pero explicado de forma sencilla, con acciones concretas que puedes empezar esta misma semana.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Reemplaza la consulta con mi médico?</summary>
+            <div class="faq-content">
+                No, y nunca debería hacerlo. Este libro es educativo y complementa tu cuidado médico. De hecho, una de las cosas más valiosas que vas a aprender es <strong>qué preguntas hacer en tu próxima consulta médica</strong> y qué exámenes pedir. Eso solo ya vale más que el precio del libro.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Tengo diabetes / presión alta / problemas del corazón. ¿Sirve para mí?</summary>
+            <div class="faq-content">
+                Sí, pero con una advertencia importante: si tomas medicamentos o tienes condiciones médicas, debes hablar con tu médico antes de hacer cambios. El libro lo aclara en cada capítulo. Las recomendaciones son seguras para la mayoría de las personas, pero tu médico es quien debe supervisar los cambios en tu caso particular.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Es para hombres o para mujeres?</summary>
+            <div class="faq-content">
+                Para ambos. La mayoría de los temas (nervios, músculos, sueño, digestión, azúcar) afectan por igual a hombres y mujeres después de los 60. Algunas secciones específicas (como osteoporosis) se aplican más a las mujeres, pero los hombres también las necesitan.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Y si decido que no es para mí?</summary>
+            <div class="faq-content">
+                Tienes 7 días completos para revisar el libro. Si sientes que no es lo que esperabas, escríbenos y te devolvemos el 100% de tu dinero. Sin trámites. Sin preguntas. Asumimos todo el riesgo nosotros.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Puedo regalárselo a un familiar?</summary>
+            <div class="faq-content">
+                Por supuesto. Muchas personas compran este libro para sus padres, sus suegros, o algún familiar mayor. Es uno de los regalos más significativos que puedes hacer — porque es información que puede mejorar la vida de alguien que amas durante muchos años.
+            </div>
+        </details>
+
+    </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Tu nueva versión <span class="accent">empieza ahora</span></h2>
+
+        <p style="color: rgba(255,255,255,0.9); font-size: 20px; max-width: 600px; margin: 0 auto 40px;">
+            Una sola decisión de hoy puede cambiar cómo te sientes en los próximos años.
+        </p>
+
+        <a href="https://hotmart.com/TU-LINK-AQUI" class="btn-buy" style="display: inline-block; max-width: 460px; margin: 0 auto;">
+            Quiero empezar hoy por solo $9.97
+        </a>
+
+        <p style="color: rgba(255,255,255,0.6); font-size: 15px; margin-top: 25px;">
+            🔒 Pago seguro · 📥 Acceso inmediato · ⭐ Garantía de 7 días
+        </p>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+    <div class="container">
+        <p style="font-family: 'Lora', serif; font-size: 18px; color: var(--gold); margin-bottom: 20px;">
+            Vive Fuerte Después de los 60
+        </p>
+
+        <p>© 2026 · Todos los derechos reservados</p>
+
+        <p class="disclaimer">
+            <strong>Aviso médico importante:</strong> Este libro tiene un propósito educativo y no sustituye el consejo médico profesional, el diagnóstico ni el tratamiento. Siempre consulta a tu médico o profesional de salud calificado antes de hacer cambios en tu alimentación, suplementación, medicamentos o rutina de ejercicios. Los resultados pueden variar de persona a persona.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
